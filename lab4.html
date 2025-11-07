@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My College Website - Lab 4</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f6ff;
+      color: #222;
+    }
+
+    /* Header */
+    header {
+      background-color: #0078d7;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #005bb5;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #0078d7;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #005bb5;
+      margin-bottom: 15px;
+    }
+
+    p, ul {
+      line-height: 1.6;
+    }
+
+    ul {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Courses Section */
+    .courses {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .course {
+      background: white;
+      padding: 20px;
+      width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .course:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Recruiters */
+    .recruiters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .recruiters img {
+      height: 50px;
+      filter: grayscale(100%);
+      transition: 0.3s;
+    }
+
+    .recruiters img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #005bb5;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .course {
+        width: 90%;
+      }
+      .gallery img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My College</h1>
+    <p>Department of Computer Engineering</p>
+  </header>
+
+  <nav>
+    <a href="#vision">Vision</a>
+    <a href="#mission">Mission</a>
+    <a href="#courses">Courses</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#recruiters">Recruiters</a>
+  </nav>
+
+  <section id="vision">
+    <h2>Vision</h2>
+    <p>To be a premier institution that develops technically skilled, socially responsible, and innovative engineers ready to meet global challenges.</p>
+  </section>
+
+  <section id="mission">
+    <h2>Mission</h2>
+    <ul>
+      <li>To offer quality education and hands-on learning experiences.</li>
+      <li>To build a foundation for innovation, leadership, and lifelong learning.</li>
+      <li>To foster collaboration between academia and industry.</li>
+    </ul>
+  </section>
+
+  <section id="courses">
+    <h2>Courses Offered</h2>
+    <div class="courses">
+      <div class="course">
+        <h3>B.Tech Computer Engineering</h3>
+        <p>Duration: 4 Years</p>
+      </div>
+      <div class="course">
+        <h3>B.Tech Information Technology</h3>
+        <p>Duration: 4 Years</p>
+      </div>
+      <div class="course">
+        <h3>Diploma in CE / IT</h3>
+        <p>Duration: 3 Years</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+      <img src="https://imgs.search.brave.com/sbr5-wt4uyRj2Fe64fzsgQdcDoV0ISOcxM2OW_-jjYo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kMTNs/b2FydGpvYzF5bi5j/bG91ZGZyb250Lm5l/dC91cGxvYWQvaW5z/dGl0dXRlL2ltYWdl/cy9sYXJnZS8xNzM2/NjIxMjc2aW1hZ2Vz/JTIwKDQpLndlYnA" alt="Event 1">
+      <img src="https://imgs.search.brave.com/uxqqgCoigA3pZd0H58coqnpm82C50xFC1Pf4WtnHtoo/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS1leHAxLmxpY2Ru/LmNvbS9kbXMvaW1h/Z2UvQzU2MUJBUUdD/ZVcxT3BaMTFkZy9j/b21wYW55LWJhY2tn/cm91bmRfMTAwMDAv/MC8xNjM1Mzk3ODY1/NjEwP2U9MjE0NzQ4/MzY0NyZ2PWJldGEm/dD1STThWdzEwRzJE/cTZsU3kyTWMxWDBs/TkU2UnNqZXpnYnhZ/RUhCenVjb2lZ" alt="Event 2">
+      <img src="https://imgs.search.brave.com/NPx3dRQ5eKesc5gYcXgxlTNH7ZYiInpCfMNcfWccUKI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS1zdGF0aWMuY29s/bGVnZWR1bmlhLmNv/bS9wdWJsaWMvcmV2/aWV3UGhvdG9zLzEw/OTEwMDAvaW5ib3Vu/ZDgzNTUwMjM1MjYx/NTUyNTE3NzYuanBn" alt="Event 3">
+    </div>
+  </section>
+
+  <section id="recruiters">
+    <h2>Top Recruiters</h2>
+    <div class="recruiters">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/TCS_New_Logo_2018.svg" alt="TCS">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Infosys_logo.svg" alt="Infosys">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Wipro_Primary_Logo_Color_RGB.svg" alt="Wipro">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Tech_Mahindra_New_Logo.svg" alt="Tech Mahindra">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 My College | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
